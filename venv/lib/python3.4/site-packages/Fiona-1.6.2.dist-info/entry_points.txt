@@ -1,0 +1,15 @@
+
+        [console_scripts]
+        fio=fiona.fio.main:main_group
+
+        [fiona.fio_commands]
+        bounds=fiona.fio.bounds:bounds
+        cat=fiona.fio.cat:cat
+        collect=fiona.fio.cat:collect
+        distrib=fiona.fio.cat:distrib
+        dump=fiona.fio.cat:dump
+        env=fiona.fio.info:env
+        info=fiona.fio.info:info
+        insp=fiona.fio.info:insp
+        load=fiona.fio.cat:load
+        
