@@ -1,0 +1,22 @@
+{
+  "name": "berkeley-paths",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nguyensomniac/berkeley-paths",
+  "authors": [
+    "Lily Nguyen <lanchi.v.nguyen@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "mapbox.js": "~2.2.1",
+    "skeleton": "~2.0.4",
+    "underscore": "~1.8.3"
+  }
+}
