@@ -60,3 +60,4 @@ target/
 
 instance
 bower_components
+.h
