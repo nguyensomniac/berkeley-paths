@@ -22,7 +22,6 @@ passlib==1.6.2
 python3-openid==3.0.4
 requests==2.4.1
 scipy==0.15.1
-Shapely==1.5.12
 six==1.10.0
 SQLAlchemy==0.9.7
 virtualenv==13.1.2
