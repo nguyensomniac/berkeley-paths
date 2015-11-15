@@ -61,4 +61,4 @@ target/
 instance
 bower_components
 node_modules
-app/static/*
+app/static
