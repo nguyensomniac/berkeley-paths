@@ -85,7 +85,7 @@ def save_user(user_data):
 
 @app.route("/")
 def display():
-  return render_template('index.html')
+  return render_template('index.html', moves_key=app.config["MOVES_PUBLIC"])
 
 # Get auth token and set session variable
 @app.route("/auth")
