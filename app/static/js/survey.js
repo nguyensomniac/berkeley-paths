@@ -28,6 +28,9 @@
         }
       })
     }
-    _.each(data, drawLine);
+    for (var i = 0; i < Object.keys(data).length; i++)  {
+      console.log(Object.keys(data))
+      drawLine(data[Object.keys(data)[i]])
+    }
   })
 })(jQuery);

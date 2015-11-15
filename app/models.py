@@ -21,7 +21,7 @@ class User(db.Document):
   year = db.IntField()
   major = db.StringField()
   last_updated = db.DateTimeField(default=datetime.datetime.now, required=True)
-  days = db.ListField(required=True)
+  days = db.DictField(required=True)
   def clean(self):
     # Raise validation error if major is not in list.
     if self.major != None and self.major not in majors:

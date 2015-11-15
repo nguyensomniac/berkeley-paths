@@ -418,6 +418,27 @@ there.
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
+h1, h2, h3, h4, h5 h6 {
+  font-family: "Fira Sans", Avenir, Calibri, sans-serif;
+  letter-spacing: 0;
+}
+
+.hero h1  {
+  font-size: 8.4rem;
+  letter-spacing: -.021em;
+  font-weight: 100;
+}
+
+body  {
+  font-family: Merriweather, Georgia, serif;
+  /*font-family: Georgia, serif;*/
+  line-height: 1.6;
+}
+
+.text-centered  {
+  text-align: center;
+}
+
 .button-block {
   display: block;
 }
