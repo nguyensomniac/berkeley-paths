@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "jquery": "~2.1.4",
+    "leaflet": "~0.7.7",
     "mapbox.js": "~2.2.1",
     "skeleton": "~2.0.4",
     "underscore": "~1.8.3"

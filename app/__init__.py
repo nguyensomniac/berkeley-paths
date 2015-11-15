@@ -11,7 +11,6 @@ else:
   for k in heroku_config:
     if k.isupper():
       app.config[k] = heroku_config[k]
-  print(app.config)
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
 db = MongoEngine(app)

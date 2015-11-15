@@ -7,19 +7,26 @@ env = assets.Environment(app)
 # Tell flask-assets where to look for our coffeescript and sass files.
 env.load_path = [
     os.path.join(os.path.dirname(__file__), 'bower_components'),
-    os.path.join(os.path.dirname(__file__), 'app', 'static', 'js'),
-    os.path.join(os.path.dirname(__file__), 'app', 'static', 'css')
+    os.path.join(os.path.dirname(__file__), 'app', 'src', 'js'),
+    os.path.join(os.path.dirname(__file__), 'app', 'src', 'css')
 ]
 
 
 env.register(
-    'js_all',
+    'js_vendor',
     assets.Bundle(
-        'jquery.js',
-        'mapbox.js',
-        'map.js',
+        'jquery/dist/jquery.min.js',
+        'underscore/underscore.js',
+        'leaflet/dist/leaflet.js',
+        'mapbox.js/mapbox.standalone.js',
+        output='vendor.js'
+    )
+)
+env.register(
+    'js_app',
+    assets.Bundle(
         'survey.js',
-        output='all.js'
+        output='app.js'
     )
 )
 
