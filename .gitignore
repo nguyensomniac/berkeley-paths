@@ -60,4 +60,4 @@ target/
 
 instance
 bower_components
-.h
+node_modules

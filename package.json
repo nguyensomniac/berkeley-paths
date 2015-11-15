@@ -1,0 +1,22 @@
+{
+  "name": "berkeley-paths",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyensomniac/berkeley-paths.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/nguyensomniac/berkeley-paths/issues"
+  },
+  "homepage": "https://github.com/nguyensomniac/berkeley-paths#readme",
+  "dependencies": {
+    "bower": "^1.6.5"
+  }
+}
