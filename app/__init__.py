@@ -6,6 +6,7 @@ if os.environ.get("ENV") != "heroku":
   app.config.from_pyfile('config.py')
 else:
   app.config.from_object(os.environ)
+  print(app.config)
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
 db = MongoEngine(app)
