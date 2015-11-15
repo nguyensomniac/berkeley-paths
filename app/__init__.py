@@ -1,6 +1,6 @@
 from flask import Flask
 from flask.ext.mongoengine import MongoEngine
-import os
+import os, logging
 app = Flask(__name__, instance_relative_config=True)
 if os.environ.get("ENV") != "heroku":
   app.config.from_pyfile('config.py')
