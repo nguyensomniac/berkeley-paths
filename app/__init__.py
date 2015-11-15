@@ -5,8 +5,7 @@ app = Flask(__name__, instance_relative_config=True)
 if os.environ.get("ENV") != "heroku":
   app.config.from_pyfile('config.py')
 else:
-  app.config.from_object(os.environ)
-  print(app.config)
+  app.config.from_object(os.environ.copy())
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
 db = MongoEngine(app)
