@@ -53,9 +53,7 @@ def update_storyline(user_id):
   u = User.objects.get(user_id = user_id)
   m = prepare_map(CAMPUS_MAP)
   summary = moves.moves("/user/storyline/daily", {
-    "from": "20151005", 
-    "to": "20151011",
-    # "pastDays": 7,
+    "pastDays": 7,
     "trackPoints": "true", 
     "access_token": u.access_token
   })
