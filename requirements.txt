@@ -1,6 +1,7 @@
 click==5.1
 click-plugins==1.0.2
 cligj==0.3.0
+cssmin==0.2.0
 Fiona==1.6.2
 Flask==0.10.1
 Flask-Assets==0.11
@@ -9,6 +10,7 @@ Flask-WTF==0.12
 gunicorn==19.3.0
 itsdangerous==0.24
 Jinja2==2.8
+jsmin==2.1.6
 MarkupSafe==0.23
 mongoengine==0.10.0
 nose==1.3.7
@@ -18,7 +20,7 @@ pyparsing==2.0.3
 python-dateutil==2.4.2
 pytz==2015.6
 requests==2.7.0
-Shapely==1.5.9
+Shapely==1.5.12
 six==1.10.0
 webassets==0.11.1
 Werkzeug==0.10.4
