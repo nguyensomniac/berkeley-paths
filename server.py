@@ -19,6 +19,7 @@ env.register(
         'underscore/underscore.js',
         'leaflet/dist/leaflet.js',
         'mapbox.js/mapbox.standalone.js',
+        filters='jsmin',
         output='vendor.js'
     )
 )
@@ -26,6 +27,7 @@ env.register(
     'js_app',
     assets.Bundle(
         'survey.js',
+        filters='jsmin',
         output='app.js'
     )
 )
@@ -35,7 +37,9 @@ env.register(
     assets.Bundle(
         'mapbox.js/mapbox.css',
         'skeleton/css/skeleton.css',
+        'webfonts.css',
         'style.css',
+        filters='cssmin',
         output='all.css'
     )
 )

@@ -1,3 +1,8 @@
+body  {
+  font-family: Merriweather, Georgia, serif;
+  line-height: 1.6;
+}
+
 h1, h2, h3, h4, h5 h6 {
   font-family: "Fira Sans", Avenir, Calibri, sans-serif;
   letter-spacing: 0;
@@ -9,10 +14,11 @@ h1, h2, h3, h4, h5 h6 {
   font-weight: 100;
 }
 
-body  {
-  font-family: Merriweather, Georgia, serif;
-  /*font-family: Georgia, serif;*/
-  line-height: 1.6;
+input,
+button,
+.button,
+.button-primary {
+  font-family: "Fira Sans", Avenir, Calibri, sans-serif;
 }
 
 .text-centered  {

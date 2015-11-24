@@ -14,4 +14,6 @@ else:
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
 db = MongoEngine(app)
+from app import map
+from app import moves
 from app import routes

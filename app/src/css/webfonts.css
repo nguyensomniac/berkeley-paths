@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300italic,300);
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Fira Sans UltraLight'),
+       url(./fonts/fira/FiraSans-UltraLight.eot) format('eot'),
+       url(./fonts/fira/FiraSans-UltraLight.woff) format('woff'),
+       url(./fonts/fira/FiraSans-UltraLight.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Fira Sans Bold'),
+       url(./fonts/fira/FiraSans-Bold.eot) format('eot'),
+       url(./fonts/fira/FiraSans-Bold.woff) format('woff'),
+       url(./fonts/fira/FiraSans-Bold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans Light'),
+       url(./fonts/fira/FiraSans-Light.eot) format('eot'),
+       url(./fonts/fira/FiraSans-Light.woff) format('woff'),
+       url(./fonts/fira/FiraSans-Light.ttf) format('ttf');
+}
