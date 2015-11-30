@@ -9,12 +9,62 @@
 </head>
 <body>
   <div class="hero text-centered">
-    <div class="container">   
+    <div class="container hero__container">   
       <div class="eight columns offset-by-two">
         <h1>Moving Berkeley</h1>
         <p>an interactive map of the paths UC Berkeley students take throughout their day-to-day lives</p>
 
-        <a class="button button-primary" href="https://api.moves-app.com/oauth/v1/authorize?response_type=code&client_id={{ moves_key }}&scope=activity%20location">Auth with Moves</a>
+        <a class="button button-primary" href="#participate">Participate</a>
+      </div>
+    </div>
+  </div>
+  <div class="text-section text-section--navy text-section--large">
+    <div class="container">
+      <div class="eight columns offset-by-two text-centered">
+        <p>Moving Berkeley is an experiment by the Daily Cal born from a curiosity of when and how different public spaces on campus are used. Using data aggregated from Moves, an activity tracking smartphone app, we will build a map that examines where UC Berkeley students spend their time on campus.</p>
+        <p>This project is open-source, and <a href="https://github.com/nguyensomniac/berkeley-paths">you can view the code on Github.</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="text-section" id="participate">
+    <div class="container">
+      <div class="twelve columns">
+        <h2 class="text-centered">Participate</h2>
+      </div>
+      <div class="row">
+        <div class="four columns">
+          <div class="text-centered">
+            <div class="step-circle">1</div>
+            <img class="step--image" src="static/img/phone.svg" alt="">
+            <h3 class="header--alternate">Download Moves.</h3>
+            <hr>
+          </div>
+          <p>We looked into other options, including using Google's location history, and concluded that using the <a href="http://moves-app.com/">Moves app</a> would paint the most accurate picture of the places we visit. Keep your charger with you - this app eats up your battery.</p>
+          <div class="text-centered">
+            <a href="http://moves-app.com/" class="button button-primary">Download Moves</a>     
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="text-centered">
+            <div class="step-circle">2</div>
+            <img class="step--image" src="static/img/lock.svg" alt="">
+            <h3 class="header--alternate">Connect with our app.</h3>
+            <hr>
+          </div>
+          <p>In order for you to participate in our project, you'll have to let Moves know that we can access your data. Click the button below to authenticate with Moves, and afterwards you'll be redirected to a short survey.</p>
+          <div class="text-centered">
+            <a href="https://api.moves-app.com/oauth/v1/authorize?response_type=code&client_id={{ moves_key }}&scope=activity%20location" class="button button-primary">Auth with Moves</a>     
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="text-centered">
+            <div class="step-circle">3</div>
+            <img class="step--image" src="static/img/shoes.svg" alt="">
+            <h3 class="header--alternate">Move around.</h3>
+            <hr>
+          </div>
+          <p>Keep the app around for an hour, a day, or more. We'll stop collecting data after a week, and we won't store any data on where you spend your day off campus.</p>
+        </div>
       </div>
     </div>
   </div>

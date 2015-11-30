@@ -1,11 +1,36 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
 body  {
   font-family: Merriweather, Georgia, serif;
+  font-weight: 300;
   line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5 h6 {
   font-family: "Fira Sans", Avenir, Calibri, sans-serif;
   letter-spacing: 0;
+}
+h3  {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.header--alternate  {
+  color: #22A4B5;
+}
+.hero {
+  background-image: url('/static/img/background.jpg');
+  padding: 7rem 0;
+  color: white;
+}
+
+.hero__container  {
+  border: .35rem solid currentColor;
+  padding: 3.5rem 1.4rem;
+  background-color: rgba(20, 50, 65, .4);
 }
 
 .hero h1  {
@@ -19,17 +44,72 @@ button,
 .button,
 .button-primary {
   font-family: "Fira Sans", Avenir, Calibri, sans-serif;
+  font-size: 1.4rem;
+  text-transform: unset;
+  letter-spacing: unset;
+}
+
+.button.button-primary,
+button.button-primary {
+  background-color: #24D0E7;
+}
+
+.button.button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:hover, 
+button.button-primary:focus {
+  background-color: #22A4B5;
 }
 
 .text-centered  {
   text-align: center;
 }
 
-.button-block {
+.text-section {
+  padding: 3.5rem 0;
+}
+
+.text-section--large  {
+  font-size: 2.0rem;
+  line-height: 1.75;
+  padding: 5.6rem 0;
+}
+
+.text-section--navy {
+  background-color: #394F5B;
+  color: white;
+}
+
+.text-section--navy a {
+  color: white;
+}
+
+.button.button-block,
+.button-primary.button-block {
   display: block;
 }
 
 .survey-map  {
   width: 100%;
   padding-top: 60%;
+}
+
+.step--image  {
+  display: block;
+  margin: auto;
+}
+
+.step-circle  {
+  border-radius: 100%;
+  background-color: #22A4B5;
+  color: white;
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  color: white;
+  font-family: "Fira Sans", Avenir, Calibri, sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 2;
+  margin: 1.4rem 0;
 }
