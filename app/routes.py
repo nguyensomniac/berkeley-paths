@@ -12,7 +12,7 @@ def store_access_tokens(user_id, access_token, refresh_token):
     User.objects(user_id = user_id).update_one(
       access_token = access_token, 
       refresh_token = refresh_token,
-      last_updated = datetime.datetime.now()).save()
+      last_updated = datetime.datetime.now(), upsert=True).save()
     return True
   except Exception:
     return False
@@ -42,6 +42,7 @@ def store_survey_data(year, major):
 
 @app.route("/")
 def display():
+  session.clear()
   return render_template('index.html', moves_key=app.config["MOVES_PUBLIC"])
 
 # Get auth token and set session variable
