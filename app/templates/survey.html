@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  {% assets "css_all" %}
-    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"></script>
-  {% endassets %}
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Moving Berkeley - Survey{% endblock %}
+{% block content %}
   <div class="container">
     <h1>Your data:</h1>
     <div id="map" class="survey-map"></div>
@@ -37,13 +30,5 @@
       </select>
       <input class="button-primary button-block" type="submit" value="Submit">
     </form>
-
   </div>
-  {% assets "js_vendor" %}
-    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-  {% endassets %}
-  {% assets "js_app" %}
-    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-  {% endassets %}
-</body>
-</html>
+{% endblock %}

@@ -35,6 +35,4 @@ def update_map_data():
       user.days = new_data
     user.last_updated = datetime.datetime.now()
     user.save()
-    output.write("Saved\n")
-    output.close()
 update_map_data()

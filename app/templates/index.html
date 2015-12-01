@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  {% assets "css_all" %}
-    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"></script>
-  {% endassets %}
-  <title>Moves login</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Moving Berkeley - Home{% endblock %}
+{% block content %}
   <div class="hero text-centered">
     <div class="container hero__container">   
       <div class="eight columns offset-by-two">
@@ -68,5 +61,4 @@
       </div>
     </div>
   </div>
-</body>
-</html>
+{% endblock %}

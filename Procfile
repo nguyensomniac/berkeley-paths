@@ -1,1 +1,1 @@
-web: gunicorn server:app
+web: gulp build && gunicorn server:app
