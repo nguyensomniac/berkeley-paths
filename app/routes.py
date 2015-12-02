@@ -100,6 +100,6 @@ def survey_submit():
   year = int(request.form["year"])
   major = request.form["major"]
   if store_survey_data(year, major):
-    return make_response("Success!")
+    return render_template("submitted.html")
   else:
     return make_response("Something wrong happened")
