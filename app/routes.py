@@ -42,7 +42,6 @@ def store_survey_data(year, major):
 
 @app.route("/")
 def display():
-  session.clear()
   return render_template('index.html', moves_key=app.config["MOVES_PUBLIC"])
 
 # Get auth token and set session variable
