@@ -1,0 +1,38 @@
+/* General typography styles */
+@import "./bower_components/modular-scale/stylesheets/modular-scale";
+
+/* Font sizes */
+$base-size: 1.6rem;
+$type-ratio: 1.25;
+
+/* Font stacks 💸💸💸 */
+$font-sans: "Fira Sans", Avenir, Calibri, sans-serif;
+$font-serif: Merriweather, Georgia, serif;
+
+
+
+/* Do not use anywhere else - if you need a font size use the fs function. */
+@function scale($index) {
+  @return ms($index, $base-size, $type-ratio);
+}
+
+/* http://www.modularscale.com/?16&px&1.25&web&text to visualize. Index is distance away from base. */
+$font-sizes: (
+  tiny: scale(-1),
+  base: scale(0),
+  medium: scale(1),
+  large: scale(2),
+  larger: scale(3),
+  largest: scale(4),
+  jumbo: scale(7),
+  gargantuan: scale(12)
+);
+
+/* Get font size */
+@function fs($size) {
+  @if map-has-key($font-sizes, $size) {
+    @return map-get($font-sizes, $size);
+  }
+  @warn "Unknown font size: `#{$size}`";
+  @return null;
+}

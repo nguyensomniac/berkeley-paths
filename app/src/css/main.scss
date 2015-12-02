@@ -1,8 +1,8 @@
 @import "webfonts";
-* {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-}
+@import "typography";
+@import "headers";
+@import "util";
+
 body  {
   font-family: Merriweather, Georgia, serif;
   font-weight: 300;

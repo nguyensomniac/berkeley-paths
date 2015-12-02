@@ -56,7 +56,7 @@ gulp.task('vendor', function()  {
 })
 
 gulp.task('watch', function() {
-  gulp.watch(input.sass.all, ['sass']);
+  gulp.watch(input.sass.all, ['css']);
   gulp.watch(input.js, ['js']);
 });
 

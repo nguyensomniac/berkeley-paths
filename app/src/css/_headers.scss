@@ -1,0 +1,25 @@
+/* Heading-specific helper classes */
+@import "typography";
+@import "colors";
+
+.header {
+  font-family: $font-sans;
+  color: currentColor;
+}
+
+h1, h2, h3,
+h4, h5, h6  {
+  @extend .header;
+}
+
+.header--bright {
+  color: $bright-blue;
+}
+
+.header--gargantuan {
+  font-size: fs("gargantuan");
+}
+
+.header--bold {
+  font-weight: 700;
+}

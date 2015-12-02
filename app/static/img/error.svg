@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15588) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0.349,150 C0.349,232.843 67.506,300 150.349,300 L150.349,300 C233.191,300 300.348,232.843 300.348,150 L300.348,150 C300.348,67.157 233.191,0 150.349,0 L150.349,0 C67.506,0 0.349,67.157 0.349,150 L0.349,150 Z"></path>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-4" sketch:type="MSArtboardGroup">
+            <g id="Page-1" sketch:type="MSLayerGroup">
+                <path d="M300.3486,150 C300.3486,232.843 233.1916,300 150.3486,300 C67.5056,300 0.3486,232.843 0.3486,150 C0.3486,67.157 67.5056,0 150.3486,0 C233.1916,0 300.3486,67.157 300.3486,150" id="Fill-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <g id="Group-91">
+                    <mask id="mask-2" sketch:name="Clip 4" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-4"></g>
+                    <path d="M286.477,239.021 L246.412,239.021 L246.412,175.605 L286.477,175.605 L286.477,239.021 Z" id="Fill-3" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M286.477,239.021 L246.412,239.021 L246.412,175.605 L286.477,175.605 L286.477,239.021 Z" id="Stroke-5" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M204.6416,190.0928 L266.4456,77.1538 L328.2486,190.0928 L204.6416,190.0928 Z" id="Fill-6" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M204.6416,190.0928 L266.4456,77.1538 L328.2486,190.0928 L204.6416,190.0928 L204.6416,190.0928 Z" id="Stroke-7" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M220.3398,141.1064 L266.4448,56.0454 L312.5488,141.1064 L220.3398,141.1064 Z" id="Fill-8" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M220.3398,141.1064 L266.4448,56.0454 L312.5488,141.1064 L220.3398,141.1064 L220.3398,141.1064 Z" id="Stroke-9" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M236.041,92.1191 L266.445,34.9381 L296.85,92.1191 L236.041,92.1191 Z" id="Fill-10" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M236.041,92.1191 L266.445,34.9381 L296.85,92.1191 L236.041,92.1191 L236.041,92.1191 Z" id="Stroke-11" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M251.7412,46.6177 L266.4452,17.3137 L281.1492,46.6177 L251.7412,46.6177 Z" id="Fill-12" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M251.7412,46.6177 L266.4452,17.3137 L281.1492,46.6177 L251.7412,46.6177 L251.7412,46.6177 Z" id="Stroke-13" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <g id="Group-16" mask="url(#mask-2)" sketch:type="MSShapeGroup">
+                        <g transform="translate(233.000000, 239.000000)">
+                            <path d="M0.1953,0 L66.6953,0" id="Fill-14" stroke="none" fill="#FFFFFF" fill-rule="evenodd"></path>
+                            <path d="M0.1953,0 L66.6953,0" id="Stroke-15" stroke="#DBDBDB" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel" fill="none"></path>
+                        </g>
+                    </g>
+                    <path d="M197.426,200.985 L174.119,200.985 L174.119,164.093 L197.426,164.093 L197.426,200.985 Z" id="Fill-17" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M197.426,200.985 L174.119,200.985 L174.119,164.093 L197.426,164.093 L197.426,200.985 Z" id="Stroke-18" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M149.8203,172.5234 L185.7723,106.8244 L221.7243,172.5234 L149.8203,172.5234 Z" id="Fill-19" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M149.8203,172.5234 L185.7723,106.8244 L221.7243,172.5234 L149.8203,172.5234 L149.8203,172.5234 Z" id="Stroke-20" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M158.9521,144.0264 L185.7721,94.5444 L212.5911,144.0264 L158.9521,144.0264 Z" id="Fill-21" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M158.9521,144.0264 L185.7721,94.5444 L212.5911,144.0264 L158.9521,144.0264 L158.9521,144.0264 Z" id="Stroke-22" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M168.0859,115.5303 L185.7729,82.2653 L203.4589,115.5303 L168.0859,115.5303 Z" id="Fill-23" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M168.0859,115.5303 L185.7729,82.2653 L203.4589,115.5303 L168.0859,115.5303 L168.0859,115.5303 Z" id="Stroke-24" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M177.2187,89.0596 L185.7727,72.0126 L194.3257,89.0596 L177.2187,89.0596 Z" id="Fill-25" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M177.2187,89.0596 L185.7727,72.0126 L194.3257,89.0596 L177.2187,89.0596 L177.2187,89.0596 Z" id="Stroke-26" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <g id="Group-29" mask="url(#mask-2)" sketch:type="MSShapeGroup">
+                        <g transform="translate(161.000000, 201.000000)">
+                            <path d="M0.9707,0.1006 L48.5737,0.1006" id="Fill-27" stroke="none" fill="#FFFFFF" fill-rule="evenodd"></path>
+                            <path d="M0.9707,0.1006 L48.5737,0.1006" id="Stroke-28" stroke="#DBDBDB" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel" fill="none"></path>
+                        </g>
+                    </g>
+                    <path d="M114.454,164.946 L99.024,164.946 L99.024,140.522 L114.454,140.522 L114.454,164.946 Z" id="Fill-30" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M114.454,164.946 L99.024,164.946 L99.024,140.522 L114.454,140.522 L114.454,164.946 Z" id="Stroke-31" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M82.9375,146.1035 L106.7395,102.6075 L130.5415,146.1035 L82.9375,146.1035 Z" id="Fill-32" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M82.9375,146.1035 L106.7395,102.6075 L130.5415,146.1035 L82.9375,146.1035 L82.9375,146.1035 Z" id="Stroke-33" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M88.9834,127.2373 L106.7394,94.4783 L124.4944,127.2373 L88.9834,127.2373 Z" id="Fill-34" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M88.9834,127.2373 L106.7394,94.4783 L124.4944,127.2373 L88.9834,127.2373 L88.9834,127.2373 Z" id="Stroke-35" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M95.0303,108.3716 L106.7393,86.3496 L118.4483,108.3716 L95.0303,108.3716 Z" id="Fill-36" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M95.0303,108.3716 L106.7393,86.3496 L118.4483,108.3716 L95.0303,108.3716 L95.0303,108.3716 Z" id="Stroke-37" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M101.0762,90.8472 L106.7392,79.5612 L112.4022,90.8472 L101.0762,90.8472 Z" id="Fill-38" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M101.0762,90.8472 L106.7392,79.5612 L112.4022,90.8472 L101.0762,90.8472 L101.0762,90.8472 Z" id="Stroke-39" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <g id="Group-42" mask="url(#mask-2)" sketch:type="MSShapeGroup">
+                        <g transform="translate(91.000000, 164.000000)">
+                            <path d="M0.9609,0.9463 L30.5169,0.9463" id="Fill-40" stroke="none" fill="#FFFFFF" fill-rule="evenodd"></path>
+                            <path d="M0.9609,0.9463 L30.5169,0.9463" id="Stroke-41" stroke="#DBDBDB" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel" fill="none"></path>
+                        </g>
+                    </g>
+                    <path d="M64.601,224.573 L22.083,224.573 L22.083,157.275 L64.601,157.275 L64.601,224.573 Z" id="Fill-43" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M64.601,224.573 L22.083,224.573 L22.083,157.275 L64.601,157.275 L64.601,224.573 Z" id="Stroke-44" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M-22.2451,172.6523 L43.3419,52.7993 L108.9289,172.6523 L-22.2451,172.6523 Z" id="Fill-45" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M-22.2451,172.6523 L43.3419,52.7993 L108.9289,172.6523 L-22.2451,172.6523 L-22.2451,172.6523 Z" id="Stroke-46" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M-5.5859,120.666 L43.3421,30.398 L92.2671,120.666 L-5.5859,120.666 Z" id="Fill-47" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M-5.5859,120.666 L43.3421,30.398 L92.2671,120.666 L-5.5859,120.666 L-5.5859,120.666 Z" id="Stroke-48" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M11.0771,68.6816 L43.3421,7.9996 L75.6061,68.6816 L11.0771,68.6816 Z" id="Fill-49" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M11.0771,68.6816 L43.3421,7.9996 L75.6061,68.6816 L11.0771,68.6816 L11.0771,68.6816 Z" id="Stroke-50" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M27.7373,20.394 L43.3413,-10.705 L58.9463,20.394 L27.7373,20.394 Z" id="Fill-51" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M27.7373,20.394 L43.3413,-10.705 L58.9463,20.394 L27.7373,20.394 L27.7373,20.394 Z" id="Stroke-52" stroke="#DBDBDB" stroke-width="4" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <g id="Group-55" mask="url(#mask-2)" sketch:type="MSShapeGroup">
+                        <g transform="translate(1.000000, 224.000000)">
+                            <path d="M0.0918,0.5732 L84.5918,0.5732" id="Fill-53" stroke="none" fill="#FFFFFF" fill-rule="evenodd"></path>
+                            <path d="M0.0918,0.5732 L84.5918,0.5732" id="Stroke-54" stroke="#DBDBDB" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel" fill="none"></path>
+                        </g>
+                    </g>
+                    <path d="M257.995,167.941 L249.995,167.941 L249.995,156 L257.995,156 L257.995,167.941 Z" id="Fill-56" fill="#ACEFF9" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M257.995,167.941 L249.995,167.941 L249.995,156 L257.995,156 L257.995,167.941 Z" id="Stroke-57" stroke="#21CEDB" stroke-width="2" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M257.995,253.591 L270.703,253.591 L270.703,134.106 L257.995,134.106 L257.995,253.591 Z" id="Fill-58" fill="#6AE3F2" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M257.995,253.591 L270.703,253.591 L270.703,134.106 L257.995,134.106 L257.995,253.591 Z" id="Stroke-59" stroke="#21CEDB" stroke-width="2" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M81.682,212.473 L73.682,212.473 L73.682,163.563 L81.682,163.563 L81.682,212.473 Z" id="Fill-60" fill="#6AE3F2" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M81.682,212.473 L73.682,212.473 L73.682,163.563 L81.682,163.563 L81.682,212.473 Z" id="Stroke-61" stroke="#21CEDB" stroke-width="2" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M128.521,200.487 L120.521,200.487 L120.521,163.381 L128.521,163.381 L128.521,200.487 Z" id="Fill-62" fill="#6AE3F2" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M128.521,200.487 L120.521,200.487 L120.521,163.381 L128.521,163.381 L128.521,200.487 Z" id="Stroke-63" stroke="#21CEDB" stroke-width="2" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M175.362,188.503 L167.362,188.503 L167.362,163.199 L175.362,163.199 L175.362,188.503 Z" id="Fill-64" fill="#6AE3F2" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M175.362,188.503 L167.362,188.503 L167.362,163.199 L175.362,163.199 L175.362,188.503 Z" id="Stroke-65" stroke="#21CEDB" stroke-width="2" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M222.202,176.518 L214.202,176.518 L214.202,163.017 L222.202,163.017 L222.202,176.518 Z" id="Fill-66" fill="#6AE3F2" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M222.202,176.518 L214.202,176.518 L214.202,163.017 L222.202,163.017 L222.202,176.518 Z" id="Stroke-67" stroke="#21CEDB" stroke-width="2" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M236.9492,171.7207 L57.5582,217.6207 L57.5582,163.5627 L236.9492,163.5627 L236.9492,171.7207 Z M42.7032,153.8107 L42.7032,230.8597 L249.9952,177.8197 L249.9952,153.8107 L42.7032,153.8107 Z" id="Fill-68" fill="#6AE3F2" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M236.9492,171.7207 L57.5582,217.6207 L57.5582,163.5627 L236.9492,163.5627 L236.9492,171.7207 L236.9492,171.7207 Z M42.7032,153.8107 L42.7032,230.8597 L249.9952,177.8197 L249.9952,153.8107 L42.7032,153.8107 L42.7032,153.8107 Z" id="Stroke-69" stroke="#21CEDB" stroke-width="2" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M42.703,253.597 L29.995,253.597 L29.995,134.112 L42.703,134.112 L42.703,253.597 Z" id="Fill-70" fill="#6AE3F2" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M42.703,253.597 L29.995,253.597 L29.995,134.112 L42.703,134.112 L42.703,253.597 Z" id="Stroke-71" stroke="#21CEDB" stroke-width="2" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M177.6553,139.2773 L209.3193,170.9413 L177.6543,202.6063 L145.9893,170.9413 L177.6553,139.2773 Z" id="Fill-72" fill="#E8FBFD" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M177.6553,139.2773 L209.3193,170.9413 L177.6543,202.6063 L145.9893,170.9413 L177.6553,139.2773 L177.6553,139.2773 Z" id="Stroke-73" stroke="#21CEDB" stroke-width="2" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M29.9941,129.8164 C31.9411,128.9694 34.0911,128.5004 36.3491,128.5004 C38.6061,128.5004 40.7541,128.9684 42.6991,129.8154 L42.7031,134.1114 L29.9951,134.1114 L29.9941,129.8164 Z" id="Fill-74" fill="#ACEFF9" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M29.9941,129.8164 C31.9411,128.9694 34.0911,128.5004 36.3491,128.5004 C38.6061,128.5004 40.7541,128.9684 42.6991,129.8154 L42.7031,134.1114 L29.9951,134.1114 L29.9941,129.8164 L29.9941,129.8164 Z" id="Stroke-75" stroke="#21CEDB" stroke-width="2" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M257.9941,129.8164 C259.9411,128.9694 262.0911,128.5004 264.3491,128.5004 C266.6061,128.5004 268.7541,128.9684 270.6991,129.8154 L270.7031,134.1114 L257.9951,134.1114 L257.9941,129.8164 Z" id="Fill-76" fill="#ACEFF9" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <path d="M257.9941,129.8164 C259.9411,128.9694 262.0911,128.5004 264.3491,128.5004 C266.6061,128.5004 268.7541,128.9684 270.6991,129.8154 L270.7031,134.1114 L257.9951,134.1114 L257.9941,129.8164 L257.9941,129.8164 Z" id="Stroke-77" stroke="#21CEDB" stroke-width="2" stroke-linejoin="bevel" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                    <g id="Group-81" mask="url(#mask-2)" fill="#6AE3F2" sketch:type="MSShapeGroup">
+                        <g transform="translate(173.000000, 150.000000)">
+                            <path d="M20.8564,16.7324 C19.8414,16.7324 18.8264,17.1194 18.0514,17.8934 C16.5044,19.4424 16.5044,21.9504 18.0524,23.4984 C18.8274,24.2724 19.8404,24.6604 20.8554,24.6604 C21.8704,24.6604 22.8834,24.2724 23.6594,23.4984 C25.2064,21.9514 25.2074,19.4414 23.6584,17.8924 C22.8844,17.1194 21.8704,16.7324 20.8564,16.7324 M20.8564,18.7324 L20.8564,18.7324 C21.3804,18.7324 21.8734,18.9364 22.2444,19.3064 C23.0094,20.0724 23.0104,21.3184 22.2454,22.0834 C21.8744,22.4554 21.3794,22.6594 20.8554,22.6594 C20.3314,22.6594 19.8374,22.4554 19.4664,22.0844 C18.7024,21.3184 18.7024,20.0734 19.4654,19.3084 C19.8364,18.9364 20.3314,18.7324 20.8564,18.7324" id="Fill-78"></path>
+                            <path d="M12.8779,8.7539 C11.8639,8.7539 10.8499,9.1409 10.0749,9.9149 C8.5259,11.4639 8.5259,13.9729 10.0749,15.5219 C10.8499,16.2949 11.8629,16.6819 12.8779,16.6819 C13.8919,16.6819 14.9059,16.2949 15.6809,15.5209 C17.2289,13.9729 17.2299,11.4629 15.6809,9.9139 C14.9069,9.1409 13.8929,8.7539 12.8779,8.7539 M12.8789,10.7539 L12.8789,10.7539 C13.4029,10.7539 13.8969,10.9579 14.2669,11.3279 C14.6379,11.6989 14.8419,12.1919 14.8419,12.7179 C14.8419,13.2419 14.6379,13.7349 14.2669,14.1059 C13.8959,14.4779 13.4019,14.6819 12.8779,14.6819 C12.3539,14.6819 11.8599,14.4779 11.4889,14.1079 C11.1179,13.7359 10.9129,13.2419 10.9129,12.7189 C10.9129,12.1939 11.1179,11.6999 11.4889,11.3289 C11.8599,10.9579 12.3539,10.7539 12.8789,10.7539" id="Fill-79"></path>
+                            <path d="M4.9004,0.7754 C3.8854,0.7754 2.8724,1.1624 2.0974,1.9364 C0.5484,3.4854 0.5484,5.9954 2.0974,7.5444 C2.8714,8.3174 3.8854,8.7044 4.8994,8.7044 C5.9144,8.7044 6.9284,8.3174 7.7034,7.5434 C9.2514,5.9954 9.2514,3.4854 7.7044,1.9364 C6.9294,1.1624 5.9154,0.7754 4.9004,0.7754 M4.9004,2.7754 C5.4254,2.7754 5.9194,2.9804 6.2894,3.3494 C7.0544,4.1164 7.0544,5.3634 6.2894,6.1284 C5.9184,6.5004 5.4244,6.7044 4.8994,6.7044 C4.3754,6.7044 3.8814,6.5004 3.5114,6.1294 C2.7464,5.3634 2.7464,4.1174 3.5114,3.3504 C3.8824,2.9794 4.3764,2.7754 4.9004,2.7754" id="Fill-80"></path>
+                        </g>
+                    </g>
+                    <g id="Group-85" mask="url(#mask-2)" fill="#6AE3F2" sketch:type="MSShapeGroup">
+                        <g transform="translate(157.000000, 167.000000)">
+                            <path d="M4.4541,0.2227 C3.4391,0.2227 2.4251,0.6107 1.6501,1.3847 C0.1011,2.9327 0.1011,5.4427 1.6501,6.9907 C2.4251,7.7637 3.4391,8.1507 4.4541,8.1507 C5.4681,8.1507 6.4821,7.7637 7.2561,6.9907 C8.8051,5.4417 8.8041,2.9327 7.2571,1.3847 C6.4821,0.6107 5.4681,0.2227 4.4541,0.2227 M4.4541,2.2227 C4.9771,2.2227 5.4721,2.4277 5.8421,2.7987 C6.6071,3.5647 6.6071,4.8107 5.8421,5.5767 C5.4711,5.9467 4.9781,6.1507 4.4541,6.1507 C3.9291,6.1507 3.4351,5.9467 3.0641,5.5757 C2.6931,5.2047 2.4891,4.7117 2.4891,4.1877 C2.4891,3.6627 2.6931,3.1697 3.0641,2.7987 C3.4351,2.4277 3.9301,2.2227 4.4541,2.2227" id="Fill-82"></path>
+                            <path d="M12.4307,8.2012 C11.4167,8.2012 10.4027,8.5882 9.6277,9.3612 C8.0797,10.9102 8.0797,13.4202 9.6277,14.9682 C10.4027,15.7422 11.4167,16.1292 12.4307,16.1292 C13.4457,16.1292 14.4597,15.7422 15.2337,14.9682 C16.7827,13.4192 16.7827,10.9102 15.2337,9.3622 C14.4587,8.5882 13.4457,8.2012 12.4307,8.2012 M12.4307,10.2012 C12.9547,10.2012 13.4487,10.4052 13.8197,10.7772 C14.1907,11.1472 14.3957,11.6402 14.3957,12.1652 C14.3957,12.6892 14.1907,13.1822 13.8197,13.5542 C13.4487,13.9252 12.9547,14.1292 12.4307,14.1292 C11.9067,14.1292 11.4127,13.9242 11.0417,13.5542 C10.2767,12.7882 10.2767,11.5412 11.0407,10.7762 C11.4117,10.4052 11.9067,10.2012 12.4307,10.2012" id="Fill-83"></path>
+                            <path d="M20.4082,16.1787 C19.3942,16.1787 18.3802,16.5657 17.6062,17.3387 C16.0582,18.8887 16.0582,21.3967 17.6052,22.9457 C18.3802,23.7197 19.3942,24.1077 20.4082,24.1077 C21.4232,24.1077 22.4362,23.7197 23.2112,22.9457 C24.7602,21.3967 24.7602,18.8887 23.2112,17.3397 C22.4362,16.5657 21.4232,16.1787 20.4082,16.1787 M20.4082,18.1787 C20.9322,18.1787 21.4262,18.3827 21.7972,18.7537 C22.5622,19.5197 22.5622,20.7657 21.7962,21.5317 C21.4262,21.9027 20.9322,22.1077 20.4082,22.1077 C19.8842,22.1077 19.3902,21.9027 19.0202,21.5327 C18.2562,20.7657 18.2562,19.5187 19.0202,18.7537 C19.3902,18.3827 19.8842,18.1787 20.4082,18.1787" id="Fill-84"></path>
+                        </g>
+                    </g>
+                    <g id="Group-89" mask="url(#mask-2)" fill="#6AE3F2" sketch:type="MSShapeGroup">
+                        <g transform="translate(165.000000, 158.000000)">
+                            <path d="M4.6777,0.999 C3.6627,0.999 2.6487,1.387 1.8737,2.161 C0.3247,3.709 0.3247,6.219 1.8737,7.767 C2.6487,8.541 3.6627,8.928 4.6767,8.928 C5.6917,8.928 6.7057,8.541 7.4797,7.767 C9.0277,6.219 9.0277,3.709 7.4807,2.16 C6.7057,1.387 5.6927,0.999 4.6777,0.999 M4.6777,2.999 L4.6777,2.999 C5.2017,2.999 5.6957,3.204 6.0657,3.573 C6.8307,4.34 6.8307,5.587 6.0657,6.353 C5.6947,6.724 5.2007,6.928 4.6767,6.928 C4.1527,6.928 3.6587,6.723 3.2877,6.352 C2.9167,5.981 2.7117,5.488 2.7117,4.964 C2.7117,4.439 2.9167,3.946 3.2877,3.575 C3.6587,3.204 4.1537,2.999 4.6777,2.999" id="Fill-86"></path>
+                            <path d="M12.6553,8.9766 C11.6413,8.9766 10.6273,9.3646 9.8513,10.1386 C8.3033,11.6876 8.3033,14.1956 9.8513,15.7446 C10.6263,16.5186 11.6393,16.9066 12.6543,16.9066 C13.6693,16.9066 14.6833,16.5186 15.4583,15.7446 C17.0053,14.1956 17.0053,11.6866 15.4583,10.1376 C14.6833,9.3646 13.6703,8.9766 12.6553,8.9766 M12.6553,10.9766 L12.6553,10.9766 C13.1793,10.9766 13.6733,11.1816 14.0433,11.5506 C14.8083,12.3176 14.8083,13.5646 14.0443,14.3306 C13.6733,14.7016 13.1783,14.9056 12.6543,14.9056 C12.1303,14.9056 11.6363,14.7016 11.2663,14.3306 C10.5013,13.5646 10.5013,12.3186 11.2653,11.5536 C11.6373,11.1816 12.1313,10.9766 12.6553,10.9766" id="Fill-87"></path>
+                            <path d="M20.6328,16.9551 C19.6188,16.9551 18.6048,17.3421 17.8288,18.1161 C16.2808,19.6651 16.2808,22.1731 17.8288,23.7221 C18.6038,24.4961 19.6178,24.8841 20.6328,24.8841 C21.6468,24.8841 22.6608,24.4961 23.4358,23.7231 C24.9838,22.1731 24.9838,19.6641 23.4358,18.1151 C22.6608,17.3421 21.6478,16.9551 20.6328,16.9551 M20.6338,18.9551 L20.6338,18.9551 C21.1568,18.9551 21.6518,19.1591 22.0208,19.5291 C22.7858,20.2951 22.7858,21.5421 22.0218,22.3081 C21.6508,22.6791 21.1568,22.8841 20.6328,22.8841 C20.1078,22.8841 19.6138,22.6791 19.2438,22.3081 C18.4788,21.5421 18.4788,20.2961 19.2418,19.5311 C19.6138,19.1601 20.1088,18.9551 20.6338,18.9551" id="Fill-88"></path>
+                        </g>
+                    </g>
+                    <path d="M150.3486,0 C67.5056,0 0.3486,67.157 0.3486,150 C0.3486,232.842 67.5056,300 150.3486,300 C233.1916,300 300.3486,232.842 300.3486,150 C300.3486,67.157 233.1916,0 150.3486,0 M150.3486,4 C189.3466,4 226.0106,19.187 253.5856,46.762 C281.1616,74.338 296.3486,111.002 296.3486,150 C296.3486,188.998 281.1616,225.661 253.5856,253.237 C226.0106,280.813 189.3466,296 150.3486,296 C111.3506,296 74.6866,280.813 47.1116,253.237 C19.5356,225.661 4.3486,188.998 4.3486,150 C4.3486,111.002 19.5356,74.338 47.1116,46.762 C74.6866,19.187 111.3506,4 150.3486,4" id="Fill-90" fill="#21CEDB" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

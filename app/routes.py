@@ -1,4 +1,4 @@
-from flask import Flask, session, render_template, request, Response, redirect, url_for, make_response
+from flask import Flask, session, render_template, request, Response, redirect, url_for, make_response, abort
 from app import app
 from app import map as m
 from app import moves
@@ -89,7 +89,7 @@ def current_user_paths():
     u = User.objects.get(user_id = session["user_id"]).to_json()
     return Response(json.dumps(u))
   except DoesNotExist:
-    return make_response("Something wrong happened")
+    return abort(500)
 
 @app.route("/map")
 def render_map():
@@ -102,4 +102,12 @@ def survey_submit():
   if store_survey_data(year, major):
     return render_template("submitted.html")
   else:
-    return make_response("Something wrong happened")
+    return abort(500)
+
+@app.errorhandler(404)
+def not_found(err):
+  return render_template("404.html")
+
+@app.errorhandler(500)
+def not_found(err):
+  return render_template("500.html")
