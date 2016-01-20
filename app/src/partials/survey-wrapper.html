@@ -1,0 +1,34 @@
+<div class="modal--background"></div>
+<div class="modal">
+  <div ui-view></div>
+</div>
+<div class="container">
+  <h1>Your data:</h1>
+  <div id="map" class="survey-map"></div>
+  <h2>In order to make our paths app a more interactive experience, please answer a few questions about yourself.</h2>
+  <form action="/survey_submit" method="POST">    
+    <h3>Year:</h3>
+    <select name="year">
+      <option value="1">Freshman</option>
+      <option value="2">Sophomore</option>
+      <option value="3">Junior</option>
+      <option value="4">Senior</option>
+      <option value="5">Grad Student</option>
+    </select>
+    <h3>Major:</h3>
+    <select name="major">
+      <option value="ARTS">Arts &amp; Humanities</option>
+      <option value="BIOLOGY">Biological Sciences</option>
+      <option value="BUSINESS">Business</option>
+      <option value="EECS">CS &amp; EECS</option>
+      <option value="ECON">Economics</option>
+      <option value="ENGINEER">Engineering</option>
+      <option value="MATH">Math &amp; Physical Sciences</option>
+      <option value="NATURALRESOURCES">Natural Resources</option>
+      <option value="POLITICAL">Political Science</option>
+      <option value="SOCIAL">Social Science</option>
+      <option value="OTHER">Other</option>
+    </select>
+    <input class="button-primary button-block" type="submit" value="Submit">
+  </form>
+</div>

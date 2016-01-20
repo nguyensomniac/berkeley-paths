@@ -17,12 +17,14 @@ var input = {
     all: path.join(__dirname, 'app', 'src', 'css', '**')
   },
   bower: path.join(__dirname, 'bower_components'),
-  js: path.join(__dirname, 'app', 'src', 'js', '**')
+  js: path.join(__dirname, 'app', 'src', 'js', '**'),
+  partials: path.join(__dirname, 'app', 'src', 'partials', '**')
 };
 
 var output = {
   css: path.join(__dirname, 'app', 'static'),
-  js: path.join(__dirname, 'app', 'static')
+  js: path.join(__dirname, 'app', 'static'),
+  partials: path.join(__dirname, 'app', 'static', 'partials')
 };
 
 gulp.task('css', function() {
@@ -40,14 +42,18 @@ gulp.task('css', function() {
 gulp.task('js', function()  {
   gulp.src(input.js)
     .pipe(concat('app.js'))
-    .pipe(jsMin())
+    // .pipe(jsMin({mangle: false}))
     .pipe(gulp.dest(output.js));
+})
+
+gulp.task('partials', function()  {
+  gulp.src(input.partials)
+    .pipe(gulp.dest(output.partials));
 })
 
 gulp.task('vendor', function()  {
   var files = bowerFiles()
   var jsFilter = filter([path.join('**', '*.js')], {restore: true});
-  // var mapboxFilter = filter(path.join('**', 'mapbox.js'));
   gulp.src(files)
     .pipe(jsFilter)
     .pipe(jsMin())
@@ -58,6 +64,7 @@ gulp.task('vendor', function()  {
 gulp.task('watch', function() {
   gulp.watch(input.sass.all, ['css']);
   gulp.watch(input.js, ['js']);
+  gulp.watch(input.partials, ['partials']);
 });
 
-gulp.task('build', ['css', 'js', 'vendor']);
+gulp.task('build', ['css', 'js', 'vendor', 'partials']);

@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block title %}Moving Berkeley{% endblock %}
 {% block content %}
-  <div class="hero text-centered">
+  <div ng-controller="MainCtrl" ui-view></div>
+  {#  <div class="hero text-centered">
     <div class="container hero__container">   
       <div class="eight columns offset-by-two">
         <h1>Moving Berkeley</h1>
@@ -59,6 +60,6 @@
           <p>Keep the app around for an hour, a day, or more. We'll stop collecting data after a week, and we won't store any data on where you spend your day off campus.</p>
         </div>
       </div>
-    </div>
+    </div> #}
   </div>
 {% endblock %}

@@ -40,6 +40,11 @@ def store_survey_data(year, major):
     print(e)
     return False
 
+@app.route('/participate', defaults={'path': ''})
+@app.route('/participate/<path:path>')
+def participate(path):
+  return display()
+
 @app.route("/")
 def display():
   return render_template('index.html', moves_key=app.config["MOVES_PUBLIC"])
@@ -62,9 +67,9 @@ def get_auth_token():
     store_access_tokens(user_id, access_token, refresh_token)
     session["moves_access_token"] = access_token
     session["user_id"] = auth_token_request.json()["user_id"]
-    return redirect(url_for('display_survey'))
+    return redirect(url_for("display_survey"))
   except KeyError:
-    return "Something wrong happened"
+    return abort(500)
 
 # Get storyline data and filter it. Return JSON of the current user's location data.
 @app.route("/storyline")
@@ -73,15 +78,17 @@ def dump_storyline():
 
 @app.route("/survey")
 def display_survey():
+  if session.get("user_id") == None:
+    return redirect(url_for("display"))
   map_data = m.update_storyline(session["user_id"])
   if(map_data.get("error", None) == None):
     store_map_data(map_data)
-  return render_template("survey.html")
+  return render_template("index.html", moves_key=app.config["MOVES_PUBLIC"])
 
 @app.route("/paths_all")
 def get_paths_data():
   data = User.objects.all().to_json()
-  return Response(json.dumps(data), mimetype='application/json')
+  return Response(json.dumps(data), mimetype="application/json")
 
 @app.route("/paths_current")
 def current_user_paths():
@@ -103,6 +110,13 @@ def survey_submit():
     return render_template("submitted.html")
   else:
     return abort(500)
+
+@app.route("/config")
+def get_public_config():
+  public_config = {
+    "moves": app.config["MOVES_PUBLIC"]
+  }
+  return Response(json.dumps(public_config), mimetype="application/json")
 
 @app.errorhandler(404)
 def not_found(err):
