@@ -1,0 +1,29 @@
+.modal--background  {
+  height: 100%;
+  width: 100%;
+  background-color: rgba($dark-blue, .9);
+  position: fixed;
+  top: 0;
+}
+.modal--content  {
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin: auto;
+  z-index: 1;
+  border-radius: 1rem;
+  transition: height 400ms ease;
+}
+.modal--text  {
+  padding: 2% 4%;
+}
+
+.modal--button,
+input[type=submit].modal--button  {
+  width: 100%;
+  margin: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

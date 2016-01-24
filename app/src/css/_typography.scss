@@ -9,8 +9,6 @@ $type-ratio: 1.25;
 $font-sans: "Fira Sans", Avenir, Calibri, sans-serif;
 $font-serif: Merriweather, Georgia, serif;
 
-
-
 /* Do not use anywhere else - if you need a font size use the fs function. */
 @function scale($index) {
   @return ms($index, $base-size, $type-ratio);
@@ -35,4 +33,19 @@ $font-sizes: (
   }
   @warn "Unknown font size: `#{$size}`";
   @return null;
+}
+
+/* Icons: Using Ionicons with the iconfonts package */
+@include ion-font;
+
+.icon {
+  font-size: 1.5em;
+}
+
+.icon__android::before  {
+  @include ion-icon('social-android');
+}
+
+.icon__ios::before  {
+  @include ion-icon('social-apple');
 }

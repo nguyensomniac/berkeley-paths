@@ -29,15 +29,15 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)  {
       templateUrl: '/static/partials/survey-one.html'
     })
     .state('home.participate.connect', {
-      url: 'participate/connect',
+      url: '/connect',
       templateUrl: '/static/partials/survey-two.html'
     })
     .state('home.participate.survey', {
-      url: 'participate/survey',
+      url: '/survey',
       templateUrl: '/static/partials/survey-three.html'
     })
     .state('home.participate.finished', {
-      url: 'participate/complete',
+      url: '/complete',
       templateUrl: '/static/partials/survey-four.html'
     })
   $locationProvider.html5Mode(true);

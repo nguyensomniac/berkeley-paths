@@ -1,7 +1,9 @@
+@import "defaults";
 @import "webfonts";
 @import "typography";
 @import "headers";
 @import "util";
+@import "modal";
 
 body  {
   font-family: Merriweather, Georgia, serif;
@@ -11,7 +13,9 @@ body  {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5 h6 {
+h1, h2, 
+h3, h4, 
+h5, h6 {
   font-family: "Fira Sans", Avenir, Calibri, sans-serif;
   letter-spacing: 0;
 }
@@ -46,6 +50,8 @@ button,
 .button-primary {
   font-family: "Fira Sans", Avenir, Calibri, sans-serif;
   font-size: 1.4rem;
+  padding: .2rem 2rem;
+  height: auto;
   text-transform: unset;
   letter-spacing: unset;
 }

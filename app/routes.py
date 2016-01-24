@@ -76,7 +76,7 @@ def get_auth_token():
 def dump_storyline():
   return Response(json.dumps(m.update_storyline(session["user_id"])))
 
-@app.route("/survey")
+@app.route("/participate/survey")
 def display_survey():
   if session.get("user_id") == None:
     return redirect(url_for("display"))

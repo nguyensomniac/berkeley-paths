@@ -17,6 +17,7 @@
     "angular": "~1.4.8",
     "angular-ui-router": "~0.2.15",
     "d3": "~3.5.10",
+    "iconfonts": "~0.8.0",
     "jquery": "~2.1.4",
     "mapbox.js": "~2.2.1",
     "modular-scale": "~2.1.1",
