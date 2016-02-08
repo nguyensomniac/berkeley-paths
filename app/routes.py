@@ -87,7 +87,9 @@ def display_survey():
 
 @app.route("/paths_all")
 def get_paths_data():
-  data = User.objects.all().to_json()
+  data = (User.objects.all()
+  .exclude("access_token").exclude("refresh_token").exclude("last_updated").exclude("user_id")
+  .to_json())
   return Response(json.dumps(data), mimetype="application/json")
 
 @app.route("/paths_current")

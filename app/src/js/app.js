@@ -47,7 +47,9 @@ app.directive('survey', function()  {
   return  {
     templateUrl: '/static/partials/survey-wrapper.html'
   }
-})
+});
+
+
 
 app.controller('MainCtrl', function(appConfig, $scope)  {
   appConfig.getConfig().then(function(config)  {

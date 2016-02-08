@@ -21,6 +21,8 @@
     "jquery": "~2.1.4",
     "mapbox.js": "~2.2.1",
     "modular-scale": "~2.1.1",
+    "moment": "~2.11.1",
+    "moment-timezone": "~0.5.0",
     "skeleton": "~2.0.4",
     "underscore": "~1.8.3"
   }
