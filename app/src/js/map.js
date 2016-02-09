@@ -1,14 +1,18 @@
 app.directive('pathsMap', function($http) {
   //November 2 is a Monday. The date itself doesn't matter, just the weekday.
+  // Months in Moment.js are zero-indexed, so November = 10
   var currentTime = moment(new Date(2015, 10, 2));
   currentTime.tz('America/Los_Angeles');
   var WEEK = currentTime.week();
+  var INTERVAL = 2;
   currentTime.hour(13);
   currentTime.minute(50);
   var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
   var RADIUS = 6;
   var WEEK_TO_MILLISECONDS = 604800000;
 
+  //Returns an object where the keys are the number of minutes elapsed
+  // and the values are a person's position.
   var createData = function(person) {
     var t = moment(new Date(2015, 10, 1));
     t.tz('America/Los_Angeles');
@@ -28,71 +32,79 @@ app.directive('pathsMap', function($http) {
     if (person.days == undefined)  {
       return;
     }
+    var incrementMinute = function()  {
+      t.add(INTERVAL, 'minutes');
+    }
     while (currentDay < 7 && t.week() == week) {
+      // If no data for the current day, go to next day
       if (person.days[days[currentDay]] == undefined || person.days[days[currentDay]].segments.length == 0) {
         currentDay+= 1;
         t.day(t.day() + 1);
         continue;
       }
       var segs = person.days[days[currentDay]].segments;
-      var start = (segs[currentSegment].type == "move") ? segs[currentSegment].activities[0].startTime : segs[currentSegment].startTime;
-      var end = (segs[currentSegment].type == "move") ? segs[currentSegment].activities[0].endTime : segs[currentSegment].endTime;
+      // Moves start times for move activities start at the day they're mapped to. If an activity starts
+      // the week before, the seconds will wrap around, which is no bueno.
+      var start = (segs[currentSegment].type == "move")
+        ? segs[currentSegment].activities[0].startTime : segs[currentSegment].startTime;
+      var end = (segs[currentSegment].type == "move")
+        ? segs[currentSegment].activities[0].endTime : segs[currentSegment].endTime;
+      // Place markers don't have the same granularity - they'll start the week before if they want.
+      // I'm not dealing with that noise.
+      if (segs[currentSegment].type == "place" && convertMovesTime(start).week() != week) {
+        incrementSegment();
+        continue;
+      }
+      // Make sure that the specified time is in between the current segment's start time and end time.
+      // If current time is before start time, add more time. If after end time, update segment.
       if (minsOfWeek(t) < minsOfWeek(convertMovesTime(start)))  {
-        t.minute(t.minute() + 2);
+        incrementMinute();
+        continue;
       }
       else if (minsOfWeek(t) > minsOfWeek(convertMovesTime(end))) {
         incrementSegment();
+        continue;
       }
-      else  {
-        if (segs[currentSegment].type == "place") {
-          newData[minsOfWeek(t)] = formatPlaceLocation(segs[currentSegment]);
-          t.minute(t.minute() + 2);
-          continue;
-        }
-        else if (segs[currentSegment].type == "move") {
-          var tracked = 0;
-          var trackPoints = segs[currentSegment].activities[0].trackPoints;
-          var endDay = convertMovesTime(segs[currentSegment].endTime);
-          while (tracked < trackPoints.length && t.week() == week) {
-            if (minsOfWeek(convertMovesTime(trackPoints[tracked].time)) <= minsOfWeek(t)) {
-              var beforePt = trackPoints[tracked];
-              if (tracked != trackPoints.length - 1)  {
-                var afterPt = trackPoints[tracked + 1];
-                if (minsOfWeek(convertMovesTime(afterPt.time)) > minsOfWeek(t)) {
-                  var interpolator = d3.interpolateObject(beforePt, afterPt);
-                  newData[minsOfWeek(t)] = interpolator(
-                    momentPercentage(convertMovesTime(beforePt.time), convertMovesTime(afterPt.time), t));
-                  t.minute(t.minute() + 2);
-                } else  {
-                  tracked++;
-                }
+      // If the current segment is a place segment, just copy the location
+      if (segs[currentSegment].type == "place") {
+        newData[minsOfWeek(t)] = formatPlaceLocation(segs[currentSegment]);
+        incrementMinute();
+      }
+      // If the current segment is a move segment, run through the track points,
+      // approximating a position until the track points are exhausted.
+      else if (segs[currentSegment].type == "move") {
+        var tracked = 0;
+        var trackPoints = segs[currentSegment].activities[0].trackPoints;
+        while (tracked < trackPoints.length && t.week() == week) {
+          if (minsOfWeek(convertMovesTime(trackPoints[tracked].time)) <= minsOfWeek(t)) {
+            var beforePt = trackPoints[tracked];
+            if (tracked != trackPoints.length - 1)  {
+              var afterPt = trackPoints[tracked + 1];
+              if (minsOfWeek(convertMovesTime(afterPt.time)) > minsOfWeek(t)) {
+                var interpolator = d3.interpolateObject(beforePt, afterPt);
+                newData[minsOfWeek(t)] = interpolator(
+                  momentPercentage(convertMovesTime(beforePt.time), convertMovesTime(afterPt.time), t));
+                incrementMinute();
               } else  {
-                var entry = {
-                  lat: beforePt.lat,
-                  lon: beforePt.lon
-                };
-                newData[minsOfWeek(t)] = entry;
                 tracked++;
               }
             } else  {
-              t.minute(t.minute() + 2);
+              var entry = {
+                lat: beforePt.lat,
+                lon: beforePt.lon
+              };
+              newData[minsOfWeek(t)] = entry;
+              tracked++;
             }
+          } else  {
+            t.minute(t.minute() + 2);
           }
-          incrementSegment();
         }
+        incrementSegment();
       }
     }
     return newData;
   }
-
-  var updateTime = function() {
-    currentTime.minute(currentTime.minute() + 2);
-    //Make sure week wraps around
-    if (currentTime.week() != WEEK) {
-      currentTime.week(WEEK);
-    }
-  }
-
   var convertMovesTime = function(d) {
     return moment(d, "YYYYMMDDTHHmmssZ");
   }
@@ -116,29 +128,6 @@ app.directive('pathsMap', function($http) {
     return (secsOfDay(b) - secsOfDay(c)) / (secsOfDay(b) - secsOfDay(a));
   }
 
-
-
-  var interpolateTrackPoints = function(seg, time)  {
-    var trackPoints = seg.activities[0].trackPoints;
-    for (var i = 0, l = trackPoints.length; i < l; i++) {
-      if (minsOfDay(convertMovesTime(trackPoints[i].time)) >= minsOfDay(time)) {
-        var beforePt = trackPoints[i];
-        if (i != l - 1)  {
-          var afterPt = trackPoints[i + 1];
-          var interpolator = d3.interpolateObject(beforePt, afterPt);
-          return interpolator(momentPercentage(convertMovesTime(beforePt.time), convertMovesTime(afterPt.time), time));
-        }
-        else  {
-          return {
-            lat: beforePt.lat,
-            lon: beforePt.lon
-          }
-        }
-      }
-    }
-    return null;
-  }
-
   var formatPlaceLocation = function(p)  {
     return  {
       lat: p.place.location.lat,
@@ -146,31 +135,6 @@ app.directive('pathsMap', function($http) {
     }
   }
 
-  var approxLocation = function(locations) {
-    var day = currentTime.day();
-    if (locations == undefined || locations[days[day]] == undefined || locations[days[day]].segments.length == 0)  {
-      return null;
-    }
-    else  {
-      var currentDay = locations[days[day]];
-      if (minsOfDay(convertMovesTime(currentDay.segments[0].startTime)) > minsOfDay(currentTime))  {
-        return null;
-      }
-      for (var i = 0, l = currentDay.segments.length; i < l; i++)  {
-        var startTime = convertMovesTime(currentDay.segments[i].startTime),
-          endTime = convertMovesTime(currentDay.segments[i].endTime);
-        if (minsOfDay(currentTime) >= minsOfDay(startTime) && minsOfDay(currentTime) <= minsOfDay(endTime)) {
-          if (currentDay.segments[i].type == "place") {
-            return formatPlaceLocation(currentDay.segments[i]);
-          }
-          else if (currentDay.segments[i].type == "move") {
-            return interpolateTrackPoints(currentDay.segments[i], currentTime);
-          }
-        }
-      }
-      return null;
-    }
-  }
   return  {
     //templateUrl: '/static/partials/map.html',
     link: function(scope, element)  {
@@ -202,7 +166,6 @@ app.directive('pathsMap', function($http) {
           var updateData = function() {
             var d = [];
               for (var i = 0, l = scope.data.length; i < l; i++)  {
-                // var dayData = approxLocation(scope.data[i].days);
                 var dayData;
                 if (scope.data[i].newData == null)  {
                   dayData = null;
