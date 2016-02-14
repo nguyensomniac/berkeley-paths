@@ -51,7 +51,7 @@ app.directive('pathsMap', function($http) {
         ? segs[currentSegment].activities[0].endTime : segs[currentSegment].endTime;
       // Place markers don't have the same granularity - they'll start the week before if they want.
       // I'm not dealing with that noise.
-      if (segs[currentSegment].type == "place" && convertMovesTime(start).week() != week) {
+      if (segs[currentSegment].type == "place" && convertMovesTime(start).week() != convertMovesTime(end).week()) {
         incrementSegment();
         continue;
       }
@@ -66,41 +66,44 @@ app.directive('pathsMap', function($http) {
         continue;
       }
       // If the current segment is a place segment, just copy the location
-      if (segs[currentSegment].type == "place") {
-        newData[minsOfWeek(t)] = formatPlaceLocation(segs[currentSegment]);
-        incrementMinute();
-      }
-      // If the current segment is a move segment, run through the track points,
-      // approximating a position until the track points are exhausted.
-      else if (segs[currentSegment].type == "move") {
-        var tracked = 0;
-        var trackPoints = segs[currentSegment].activities[0].trackPoints;
-        while (tracked < trackPoints.length && t.week() == week) {
-          if (minsOfWeek(convertMovesTime(trackPoints[tracked].time)) <= minsOfWeek(t)) {
-            var beforePt = trackPoints[tracked];
-            if (tracked != trackPoints.length - 1)  {
-              var afterPt = trackPoints[tracked + 1];
-              if (minsOfWeek(convertMovesTime(afterPt.time)) > minsOfWeek(t)) {
-                var interpolator = d3.interpolateObject(beforePt, afterPt);
-                newData[minsOfWeek(t)] = interpolator(
-                  momentPercentage(convertMovesTime(beforePt.time), convertMovesTime(afterPt.time), t));
-                incrementMinute();
+      else  {
+        
+        if (segs[currentSegment].type == "place") {
+          newData[minsOfWeek(t)] = formatPlaceLocation(segs[currentSegment]);
+          incrementMinute();
+        }
+        // If the current segment is a move segment, run through the track points,
+        // approximating a position until the track points are exhausted.
+        else if (segs[currentSegment].type == "move") {
+          var tracked = 0;
+          var trackPoints = segs[currentSegment].activities[0].trackPoints;
+          while (tracked < trackPoints.length && t.week() == week) {
+            if (minsOfWeek(convertMovesTime(trackPoints[tracked].time)) <= minsOfWeek(t)) {
+              var beforePt = trackPoints[tracked];
+              if (tracked != trackPoints.length - 1)  {
+                var afterPt = trackPoints[tracked + 1];
+                if (minsOfWeek(convertMovesTime(afterPt.time)) > minsOfWeek(t)) {
+                  var interpolator = d3.interpolateObject(beforePt, afterPt);
+                  newData[minsOfWeek(t)] = interpolator(
+                    momentPercentage(convertMovesTime(beforePt.time), convertMovesTime(afterPt.time), t));
+                  incrementMinute();
+                } else  {
+                  tracked++;
+                }
               } else  {
+                var entry = {
+                  lat: beforePt.lat,
+                  lon: beforePt.lon
+                };
+                newData[minsOfWeek(t)] = entry;
                 tracked++;
               }
             } else  {
-              var entry = {
-                lat: beforePt.lat,
-                lon: beforePt.lon
-              };
-              newData[minsOfWeek(t)] = entry;
-              tracked++;
+              t.minute(t.minute() + 2);
             }
-          } else  {
-            t.minute(t.minute() + 2);
           }
+          incrementSegment();
         }
-        incrementSegment();
       }
     }
     return newData;
