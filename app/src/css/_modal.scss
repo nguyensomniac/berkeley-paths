@@ -5,6 +5,11 @@
   position: fixed;
   top: 0;
 }
+
+.modal--close {
+  @extend '.button-close';
+}
+
 .modal--content  {
   background-color: white;
   position: fixed;
@@ -17,7 +22,7 @@
   transition: height 400ms ease;
 }
 .modal--text  {
-  padding: 2% 4%;
+  padding: 3% 4%;
 }
 
 .modal--button,

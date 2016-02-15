@@ -8,7 +8,7 @@
 
 body  {
   font-family: Merriweather, Georgia, serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
   padding: 0;
   margin: 0;
@@ -24,6 +24,11 @@ h3  {
   font-weight: 700;
   font-size: 2.4rem;
 }
+
+.container  {
+  max-width: 128rem;
+}
+
 .header--alternate  {
   color: #22A4B5;
 }
@@ -95,6 +100,13 @@ button.button-primary:focus {
 .button.button-block,
 .button-primary.button-block {
   display: block;
+}
+
+.button--group  {
+  margin-bottom: 1.2rem;
+}
+p {
+  margin-bottom: 1.2rem;
 }
 
 .survey-map  {

@@ -1,29 +1,27 @@
-<form action="/survey_submit" method="POST">    
-  <div class="modal--text">
-    <h3>Add Background Info</h3>
-      <div class="input--label">Year</div>
-      <select name="year">
-        <option value="1">Freshman</option>
-        <option value="2">Sophomore</option>
-        <option value="3">Junior</option>
-        <option value="4">Senior</option>
-        <option value="5">Grad Student</option>
-      </select>
-      <div class="input--label">Major</div>
-      <select name="major">
-        <option value="ARTS">Arts &amp; Humanities</option>
-        <option value="BIOLOGY">Biological Sciences</option>
-        <option value="BUSINESS">Business</option>
-        <option value="EECS">CS &amp; EECS</option>
-        <option value="ECON">Economics</option>
-        <option value="ENGINEER">Engineering</option>
-        <option value="MATH">Math &amp; Physical Sciences</option>
-        <option value="NATURALRESOURCES">Natural Resources</option>
-        <option value="POLITICAL">Political Science</option>
-        <option value="SOCIAL">Social Science</option>
-        <option value="OTHER">Other</option>
-      </select>
-      <p>Your answers will stay completely anonymous and will not be used anywhere else.</p>
-  </div>
-  <input class="button button-primary modal--button" type="submit" value="Submit">
-</form>
+<div class="modal--text text--centered">
+  <h3>Add Background Info</h3>
+    <div class="input--label">Year</div>
+    <select name="year" ng-model="formData.year">
+      <option value="1">Freshman</option>
+      <option value="2">Sophomore</option>
+      <option value="3">Junior</option>
+      <option value="4">Senior</option>
+      <option value="5">Grad Student</option>
+    </select>
+    <div class="input--label">Major</div>
+    <select name="major" ng-model="formData.major">
+      <option value="ARTS">Arts &amp; Humanities</option>
+      <option value="BIOLOGY">Biological Sciences</option>
+      <option value="BUSINESS">Business</option>
+      <option value="EECS">CS &amp; EECS</option>
+      <option value="ECON">Economics</option>
+      <option value="ENGINEER">Engineering</option>
+      <option value="MATH">Math &amp; Physical Sciences</option>
+      <option value="NATURALRESOURCES">Natural Resources</option>
+      <option value="POLITICAL">Political Science</option>
+      <option value="SOCIAL">Social Science</option>
+      <option value="OTHER">Other</option>
+    </select>
+    <p>Your answers will stay completely anonymous and will not be used anywhere else.</p>
+</div>
+<input class="button button-primary modal--button" ng-click="processForm()" value="Submit">

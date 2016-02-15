@@ -1,8 +1,9 @@
-<div class="modal--text">  
+<div class="modal--text text--centered">  
   <h3>Participate</h3>
-  <p>Thank you for your interest in participating in our experiment!</p>
-  <p>We are using an external app called <a href="http://moves-app.com/" target="_blank">Moves</a> to collect location data from your smartphone. You must download this app in order to participate. <b>We won't collect data about where you live or where you go off-campus, and we'll stop tracking you as soon as you delete the app.</b></p>
-  <a class="button" href="http://appstore.com/moves" target="_blank"><span class="icon icon__ios"></span> App Store</a><a class="button" href="https://play.google.com/store/apps/details?id=com.protogeo.moves" target="_blank"><span class="icon icon__android"></span> Google Play</a>
+  <p>We are using an external app called <a href="http://moves-app.com/" target="_blank">Moves</a> to collect location data from your smartphone. <b>We won't collect data about where you live or where you go off-campus, and we'll stop tracking you as soon as you delete the app.</b></p>
+  <div class="button--group">
+    <a class="button" href="http://appstore.com/moves" target="_blank"><span class="icon icon__ios"></span> App Store</a><a class="button" href="https://play.google.com/store/apps/details?id=com.protogeo.moves" target="_blank"><span class="icon icon__android"></span> Google Play</a>
+  </div>
   <p>After you've downloaded Moves, follow the instructions on the next page to allow us to access your Moves data. You'll only have to do this once.</p>
 </div>
 <a class="button button-primary modal--button" href="https://api.moves-app.com/oauth/v1/authorize?response_type=code&client_id={{config.moves}}&scope=activity%20location">Authenticate with Moves</a>

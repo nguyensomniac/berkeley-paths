@@ -1,4 +1,4 @@
-from flask import Flask, session, render_template, request, Response, redirect, url_for, make_response, abort
+from flask import Flask, session, render_template, request, Response, redirect, url_for, make_response, abort, jsonify
 from app import app
 from app import map as m
 from app import moves
@@ -106,10 +106,15 @@ def render_map():
 
 @app.route("/survey_submit", methods=["POST"])
 def survey_submit():
-  year = int(request.form["year"])
-  major = request.form["major"]
+  data = request.get_json()
+  year = data["year"]
+  major = data["major"]
   if store_survey_data(year, major):
-    return render_template("submitted.html")
+    success = {
+      "message": "Form data submitted successfully!"
+    }
+    return Response(jsonify(success), status=200, mimetype="application/json")
+    #return render_template("submitted.html")
   else:
     return abort(500)
 

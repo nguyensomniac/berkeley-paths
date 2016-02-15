@@ -51,10 +51,17 @@ app.directive('survey', function()  {
 
 
 
-app.controller('MainCtrl', function(appConfig, $scope)  {
+app.controller('MainCtrl', function(appConfig, $scope, $http, $state)  {
   appConfig.getConfig().then(function(config)  {
     $scope.config = config;
     $scope.formData = {};
-    // $scope.processForm  
+    $scope.processForm = function() {
+      $http.post('survey_submit', $scope.formData)
+        .then(function(res) {
+          if (res.status == 200)  {
+            $state.go("home.participate.finished");
+          }
+        })
+    }
   })
 })

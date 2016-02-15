@@ -42,6 +42,10 @@ $font-sizes: (
   font-size: 1.5em;
 }
 
+.icon__close::before  {
+  @include ion-icon('close');
+}
+
 .icon__android::before  {
   @include ion-icon('social-android');
 }
