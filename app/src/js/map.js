@@ -174,6 +174,15 @@ app.directive('pathsMap', function($http) {
                   dayData = null;
                 } else  {
                   dayData = scope.data[i]["newData"][minsOfWeek(currentTime)];
+                  // var MAX_GAP = INTERVAL * 30;
+                  // var t = 2;
+                  // while (dayData == null && t < MAX_GAP)  {
+                  //   dayData = scope.data[i]["newData"][minsOfWeek(currentTime) + t];
+                  //   if (dayData != null)  {
+                  //     console.log(t);
+                  //   }
+                  //   t += INTERVAL;
+                  // }
                 }
                 if (dayData != null)  {
                   person = map.latLngToLayerPoint(new L.LatLng(dayData.lat, dayData.lon));
@@ -194,10 +203,9 @@ app.directive('pathsMap', function($http) {
             .attr('r', 0)
             .transition()
             .duration(200)
-            .attr('r', RADIUS);
-          circle.attr('class', 'dot')
             .attr('r', RADIUS)
-            .transition(100)
+            .attr('class', 'dot');
+          circle.transition(100)
             .attr('cx', function(d) {
               return d.x;
             })
@@ -207,7 +215,9 @@ app.directive('pathsMap', function($http) {
           circle.exit()
             .transition()
             .duration(200)
-            .attr('r', 0).remove();
+            .attr('r', function() {
+              return 0;
+            }).remove();
           text.text(function()  {
               return currentTime.hour() + ':' + currentTime.minutes();
             })
